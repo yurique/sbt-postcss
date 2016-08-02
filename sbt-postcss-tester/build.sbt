@@ -1,8 +1,8 @@
-import AutoprefixerKeys._
+import PostcssKeys._
 import WebJs._
 
 lazy val root = (project in file(".")).enablePlugins(SbtWeb)
 
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
 
-pipelineStages := Seq(autoprefixer)
+pipelineStages := Seq(postcss)

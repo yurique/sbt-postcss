@@ -1,12 +1,12 @@
 sbtPlugin := true
 
-organization := "net.matthewrennie.sbt"
+organization := "ws.kotonoha.sbt"
 
-name := "sbt-autoprefixer"
+name := "sbt-postcss"
 
 version := "0.1.0-SNAPSHOT"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.6"
 
 resolvers ++= Seq(
   "Typesafe Releases Repository" at "http://repo.typesafe.com/typesafe/releases/",
@@ -16,7 +16,7 @@ resolvers ++= Seq(
   "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
 )
 
-addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.1.2")
+addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.1.4")
 
 publishMavenStyle := false
 
