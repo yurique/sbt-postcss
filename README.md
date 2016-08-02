@@ -22,8 +22,24 @@ pipelineStages in Assets := Seq(postcss)
 ```
 
 
+You will need to add following lines to your `package.json`:
+
+```json
+{
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "postcss-cli": "^2.5.2"
+  }
+}
+```
+
 To include all CSS files for post processing
 
 ```scala
 includeFilter in postcss := GlobFilter("*.css")
 ```
+
+
+### Acknowledgments
+
+This plugin was built on [matthewrennie/sbt-autoprefixer](https://github.com/matthewrennie/sbt-autoprefixer).
