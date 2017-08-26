@@ -16,7 +16,7 @@ resolvers ++= Seq(
   "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
 )
 
-addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.1.4")
+addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.2.2")
 
 publishMavenStyle := false
 
